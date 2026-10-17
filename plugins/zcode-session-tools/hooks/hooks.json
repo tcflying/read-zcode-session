@@ -1,0 +1,20 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "ReadSessionContext",
+        "hooks": [
+          {
+            "type": "process",
+            "command": "node",
+            "args": [
+              "${ZCODE_PLUGIN_ROOT}/hooks/sanitize-read-session.mjs"
+            ],
+            "timeoutMs": 5000,
+            "statusMessage": "zcode-session-tools: dropping illegal attachment field…"
+          }
+        ]
+      }
+    ]
+  }
+}

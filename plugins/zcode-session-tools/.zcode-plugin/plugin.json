@@ -1,0 +1,8 @@
+{
+  "name": "zcode-session-tools",
+  "version": "0.1.3",
+  "description": "Cross-session reading helpers for ZCode: a read-zcode-session skill and a PreToolUse hook that deletes an illegal `attachment` field from ReadSessionContext calls on non-topic strategies so the native tool call can proceed instead of failing with \"Attachments require topic strategy\". Compatibility workaround only; no other input is changed.",
+  "skills": [
+    "skills"
+  ]
+}
